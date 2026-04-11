@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giant Stars - GEOL201 Earth History</title>
+  <style>
+    :root {
+      --bg-deep: #0d1117;
+      --bg-panel: #161b22;
+      --accent: #f0883e;
+      --accent-soft: rgba(240, 136, 62, 0.15);
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --border: #30363d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg-deep);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .wrap {
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 3rem;
+    }
+
+    header {
+      text-align: center;
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-bottom: 1rem;
+    }
+
+    .tabs button {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--bg-panel);
+      color: var(--text-muted);
+      padding: 0.55rem 1rem;
+      font-size: 0.95rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .tabs button:hover {
+      color: var(--text);
+      border-color: var(--accent);
+    }
+
+    .tabs button[aria-selected="true"] {
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .panel {
+      display: none;
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      min-height: 120px;
+    }
+
+    .panel.active {
+      display: block;
+    }
+
+    .panel h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .panel h3 {
+      margin: 1.25rem 0 0.4rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .panel p {
+      margin: 0 0 0.85rem;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .panel p:last-child {
+      margin-bottom: 0;
+    }
+
+    .panel ul {
+      margin: 0 0 0.85rem;
+      padding-left: 1.35rem;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .panel li {
+      margin-bottom: 0.35rem;
+    }
+
+    .panel li:last-child {
+      margin-bottom: 0;
+    }
+
+    .note {
+      margin-top: 1rem;
+      padding: 0.85rem 1rem;
+      background: var(--accent-soft);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 6px 6px 0;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Giant Stars: What They Do and What Happens Inside</h1>
+      <p class="subtitle">GEOL201 - Earth History</p>
+    </header>
+
+    <div class="tabs" role="tablist" aria-label="Sections">
+      <button type="button" role="tab" id="tab-a" aria-selected="true" aria-controls="panel-a">What is a giant star?</button>
+      <button type="button" role="tab" id="tab-b" aria-selected="false" aria-controls="panel-b">Interior structure</button>
+      <button type="button" role="tab" id="tab-c" aria-selected="false" aria-controls="panel-c">Fusion &amp; energy</button>
+      <button type="button" role="tab" id="tab-d" aria-selected="false" aria-controls="panel-d">Late evolution</button>
+    </div>
+
+    <div id="panel-a" class="panel active" role="tabpanel" aria-labelledby="tab-a">
+      <h2>What is a giant star?</h2>
+      <p>In astronomy, a giant (or supergiant) is a star that has finished core hydrogen fusion and left the main sequence on the Hertzsprung–Russell (H–R) diagram. Compared to its main-sequence years, such a star is much larger in radius, often cooler and redder at the surface, but can be far more luminous overall because it radiates from an enormous surface area.</p>
+      <h3>What giants do, in plain terms</h3>
+      <p>The interior reorganizes: the core contracts and heats while outer layers expand and cool. The star may burn fuel in shells outside the core, and more massive stars can ignite heavier elements in the core over time. The giant phase is when the star is changing how it produces energy and moving toward its final outcome (white dwarf, neutron star, black hole, or shedding mass into space), depending on mass.</p>
+      <h3>Earth History angle</h3>
+      <p>Earth History courses often begin with the formation of the solar system from a nebula and the assembly of a layered planet. Our Sun will eventually pass through giant stages (billions of years from now). Understanding what “giant” means sets up later ideas about where the chemical ingredients of planets came from, not only from the primordial nebula, but from earlier generations of stars.</p>
+      <h3>Common names you may see</h3>
+      <ul>
+        <li>Red giants and red supergiants - large, cool photospheres, very luminous.</li>
+        <li>Horizontal branch and asymptotic giant branch (AGB) - later phases with shell burning; some stars lose a lot of mass here.</li>
+        <li>Spectral luminosity class: giants are often class III, supergiants I–II (labels depend on mass and stage).</li>
+      </ul>
+    </div>
+    <div id="panel-b" class="panel" role="tabpanel" aria-labelledby="tab-b" hidden>
+      <h2>Interior structure</h2>
+      <p>Stars are layered by density, temperature, and composition. In a giant, the simple core-plus-envelope picture of the main sequence gives way to multiple burning shells and, for lower-mass stars, eventually a degenerate core where electrons are packed so tightly that quantum pressure dominates.</p>
+      <h3>Core versus shells</h3>
+      <p>After core hydrogen is used up, the helium core may shrink until helium ignites (very low-mass stars follow a different path). Hydrogen can then burn in a shell around that core. In later stages, several shells may burn different fuels at different radii; in the most massive stars this becomes an “onion-skin” arrangement.</p>
+      <h3>How energy moves</h3>
+      <ul>
+        <li>Radiation carries energy outward in the hot, dense inner regions.</li>
+        <li>Convection can stir large outer envelopes of cool giants, mixing material.</li>
+        <li>When fusion falters in a region, the core can contract while outer layers expand, part of why the star swells into a giant.</li>
+      </ul>
+      <h3>Earth History angle</h3>
+      <p>When you study Earth’s differentiation into core, mantle, and crust, you are looking at how a planet sorted elements by density. Stars sort and process elements in a different way by fusion and shell burning, but both stories are about layered structure and how energy and matter move over time.</p>
+    </div>
+    <div id="panel-c" class="panel" role="tabpanel" aria-labelledby="tab-c" hidden>
+      <h2>Fusion and energy generation</h2>
+      <p>Stars shine because nuclear fusion in the deep interior releases energy. Sun-like stars on the main sequence mostly turn hydrogen into helium using the proton-proton chain (and, in hotter stars, the CNO cycle). After the main sequence, giants open new fusion chapters.</p>
+      <h3>Helium and heavier elements</h3>
+      <p>The triple-alpha process can combine helium nuclei into carbon at high enough temperature and density; that pathway is central to carbon and oxygen in the universe. More massive stars can later fuse carbon, neon, oxygen, and silicon, building toward iron-group nuclei in the core. Iron marks a limit in the usual sense: fusing iron does not release net energy for the core in the same way lighter nuclei do.</p>
+      <h3>Balancing gravity</h3>
+      <ul>
+        <li>Thermal pressure balances gravity (hydrostatic equilibrium); when fusion weakens locally, structure shifts.</li>
+        <li>Energy diffuses outward; at the surface it leaves as light and can drive strong winds or pulsations in some giants.</li>
+      </ul>
+      <h3>Earth History angle</h3>
+      <p>Silicon and oxygen in crust-forming minerals, iron that concentrated into Earth’s core, and trace elements used in radiometric dating (such as uranium and lead systems) are part of a long story that includes nucleosynthesis in stars and dispersal when massive stars end their lives. Giant phases and later explosions help seed the interstellar gas that later became the solar nebula.</p>
+    </div>
+    <div id="panel-d" class="panel" role="tabpanel" aria-labelledby="tab-d" hidden>
+      <h2>Late stages of evolution</h2>
+      <p>Outcome depends strongly on initial mass; being in a binary star system can change the details.</p>
+      <h3>Lower-mass stars (roughly Sun-like and smaller)</h3>
+      <p>After giant evolution, the star can shed its outer layers, sometimes visible as a planetary nebula, while the core becomes a white dwarf-hot and dense, supported by electron degeneracy pressure, with no fusion.</p>
+      <h3>High-mass stars</h3>
+      <p>A massive core can collapse and trigger a core-collapse supernova, leaving a neutron star or black hole and ejecting material at high speed. That ejecta spreads heavy elements into space material that can later be incorporated into new stars and planets.</p>
+      <div class="note">
+        Earth History: The geologic time scale records events on this planet, but those rocks are built from elements whose origins include giant stars and supernovae long before the solar system formed. Giant stars are one chapter in the story of how Earth was made.
+      </div>
+    </div>
+
+    <footer>GEOL201 Earth History</footer>
+  </div>
+
+  <script>
+    (function () {
+      var tabs = document.querySelectorAll('[role="tab"]');
+      var panels = document.querySelectorAll('[role="tabpanel"]');
+
+      function activate(index) {
+        tabs.forEach(function (tab, i) {
+          var on = i === index;
+          tab.setAttribute('aria-selected', on);
+          panels[i].classList.toggle('active', on);
+          panels[i].hidden = !on;
+        });
+      }
+
+      tabs.forEach(function (tab, i) {
+        tab.addEventListener('click', function () {
+          activate(i);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
